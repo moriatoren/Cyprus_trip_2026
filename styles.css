@@ -29,6 +29,8 @@ body {
   background: linear-gradient(135deg, var(--cream) 0%, #f5e6d3 100%);
   color: var(--dark);
   line-height: 1.6;
+  direction: rtl;
+  text-align: right;
 }
 
 .container {
@@ -72,10 +74,13 @@ body {
 
 .stations-track {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
+  justify-content: center;
   gap: 15px;
   overflow-x: auto;
   padding: 0 10px;
+  flex-wrap: wrap;
 }
 
 .station-btn {
@@ -92,6 +97,7 @@ body {
   min-width: 90px;
   font-size: 1rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .station-btn:hover {
@@ -123,6 +129,7 @@ body {
   background: linear-gradient(90deg, var(--turquoise), var(--mint));
   border-radius: 2px;
   flex-shrink: 0;
+  display: none;
 }
 
 /* ===== DAY HEADER ===== */
@@ -176,9 +183,10 @@ body {
   align-items: flex-start;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border-left: 5px solid;
+  border-right: 5px solid;
   animation: cardFade 0.5s ease forwards;
   opacity: 0;
+  text-align: right;
 }
 
 @keyframes cardFade {
@@ -192,13 +200,13 @@ body {
 .timeline-card:nth-child(3) { animation-delay: 0.3s; }
 
 .timeline-card:hover {
-  transform: translateX(10px);
+  transform: translateX(-10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-.morning-card { border-left-color: var(--yellow); }
-.noon-card { border-left-color: var(--coral); }
-.evening-card { border-left-color: var(--mint); }
+.morning-card { border-right-color: var(--yellow); }
+.noon-card { border-right-color: var(--coral); }
+.evening-card { border-right-color: var(--mint); }
 
 .card-icon {
   font-size: 2.5rem;
@@ -207,6 +215,7 @@ body {
 
 .card-content {
   flex: 1;
+  text-align: right;
 }
 
 .card-content h3 {
@@ -239,6 +248,7 @@ body {
   color: var(--dark);
   margin-bottom: 25px;
   font-weight: 700;
+  text-align: right;
 }
 
 .gallery-grid {
@@ -272,7 +282,7 @@ body {
   content: '❤️';
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
   font-size: 1.5rem;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -289,6 +299,7 @@ body {
   border-radius: 20px;
   margin-bottom: 50px;
   border: 3px dashed var(--coral-light);
+  text-align: right;
 }
 
 .mom-info h3 {
@@ -310,6 +321,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
+  text-align: right;
 }
 
 .info-card:hover {
@@ -340,6 +352,7 @@ body {
 /* ===== QUICK LINKS ===== */
 .quick-links {
   margin-bottom: 50px;
+  text-align: right;
 }
 
 .quick-links h3 {
@@ -417,6 +430,7 @@ body {
   border-radius: 15px;
   transition: width 0.5s ease;
   box-shadow: 0 0 15px rgba(255, 107, 107, 0.4);
+  margin-left: auto;
 }
 
 .progress-section p {
@@ -468,6 +482,10 @@ body {
 
   .links-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .stations-track {
+    flex-wrap: wrap;
   }
 }
 
