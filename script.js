@@ -44,29 +44,48 @@ function loadGallery(dayNumber) {
     folderName = 'Day ' + dayNumber;
   }
 
-  // Try to load images with different extensions
-  const extensions = ['jpg', 'avif', 'png'];
+  // Image configurations for each day
+  const imageSets = {
+    1: [
+      { num: 1, ext: 'jpg' },
+      { num: 2, ext: 'jpg' },
+      { num: 3, ext: 'jpg' },
+      { num: 4, ext: 'jpg' },
+      { num: 5, ext: 'jpg' }
+    ],
+    2: [
+      { num: 1, ext: 'jpg' },
+      { num: 2, ext: 'jpg' },
+      { num: 3, ext: 'jpg' }
+    ],
+    3: [
+      { num: 1, ext: 'jpg' },
+      { num: 2, ext: 'jpg' }
+    ],
+    4: [
+      { num: 1, ext: 'avif' },
+      { num: 2, ext: 'avif' }
+    ],
+    5: [
+      { num: 1, ext: 'jpg' },
+      { num: 2, ext: 'jpg' }
+    ],
+    6: [
+      { num: 1, ext: 'jpg' }
+    ]
+  };
 
-  for (let i = 1; i <= 10; i++) {
-    let loaded = false;
+  // Get images for this day
+  const dayImages = imageSets[dayNumber] || [];
 
-    for (let ext of extensions) {
-      if (loaded) break;
-
-      const imgPath = `images/${folderName}/${i}.${ext}`;
-      const testImg = new Image();
-
-      testImg.onload = function() {
-        const img = document.createElement('img');
-        img.src = imgPath;
-        img.alt = 'תמונה ' + i;
-        gallery.appendChild(img);
-        loaded = true;
-      };
-
-      testImg.src = imgPath;
-    }
-  }
+  // Load each image
+  dayImages.forEach(imgInfo => {
+    const imgPath = `images/${folderName}/${imgInfo.num}.${imgInfo.ext}`;
+    const img = document.createElement('img');
+    img.src = imgPath;
+    img.alt = 'תמונה ' + imgInfo.num;
+    gallery.appendChild(img);
+  });
 }
 
 // Initialize
