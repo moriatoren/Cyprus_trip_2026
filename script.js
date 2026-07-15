@@ -36,9 +36,17 @@ function loadGallery(dayNumber) {
   const gallery = document.getElementById(galleryId);
   gallery.innerHTML = '';
 
+  // Determine folder name
+  let folderName;
+  if (dayNumber === 1) {
+    folderName = 'day 1';
+  } else {
+    folderName = 'Day ' + dayNumber;
+  }
+
   // Try to load images
   for (let i = 1; i <= 10; i++) {
-    const imgPath = `images/day ${dayNumber}/${i}.jpg`;
+    const imgPath = `images/${folderName}/${i}.jpg`;
     const img = document.createElement('img');
     img.src = imgPath;
     img.alt = 'תמונה ' + i;
