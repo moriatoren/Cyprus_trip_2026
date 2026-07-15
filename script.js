@@ -2,131 +2,140 @@ const tripData = {
   days: [
     {
       day: 1,
-      date: 'July 20',
       title: 'Arrival & Check-in 🏨',
-      activity: 'Welcome to Cyprus! Arrive at the airport, collect luggage, and head to Sunrise Pearl Hotel. Check in, settle into your rooms, and refresh. In the evening, take a relaxing walk around the town, explore local shops, and enjoy a delicious welcome dinner at a traditional taverna.',
+      date: 'July 20, 2026',
+      morning: 'Travel to Cyprus and arrive at the airport! So exciting!',
+      noon: 'Check in to Sunrise Pearl Hotel and settle into your rooms',
+      evening: 'Walk around town, explore shops, and enjoy a welcome dinner',
       folder: 'day 1',
       location: { name: 'Sunrise Pearl Hotel', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
-      booking: { name: 'Hotel Check-in', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
+      booking: { name: 'Hotel Info', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
       links: [
-        { name: '🏨 Sunrise Pearl Hotel', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
-        { name: '🚕 Airport Transfer', link: '#' },
-        { name: '🍽️ Welcome Dinner', link: 'https://maps.google.com/?q=restaurants+Protaras+Cyprus' }
+        { name: '🏨 Hotel', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
+        { name: '🍽️ Dinner', link: 'https://maps.google.com/?q=restaurants+Protaras' },
+        { name: '🛍️ Shopping', link: 'https://maps.google.com/?q=Protaras+shops' }
       ]
     },
     {
       day: 2,
-      date: 'July 21',
       title: 'Pool & Sea Day 🏊‍♀️',
-      activity: 'A day of relaxation and fun! Start with a refreshing swim in the hotel pool. Later, head to the stunning Fig Tree Bay - one of Cyprus\'s most beautiful beaches with crystal clear turquoise waters and golden sand. Swim, sunbathe, and enjoy the stunning sunset over the Mediterranean Sea. In the evening, visit Luna Park for some fun and excitement!',
+      date: 'July 21, 2026',
+      morning: 'Wake up and jump into the hotel pool!',
+      noon: 'Head to Fig Tree Bay - one of the most beautiful beaches in Cyprus!',
+      evening: 'Luna Park adventure - rides, games, and fun under the stars! 🎡',
       folder: 'Day 2',
       location: { name: 'Fig Tree Bay Beach', link: 'https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html' },
       booking: { name: 'Beach Info', link: 'https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html' },
       links: [
-        { name: '🏖️ Fig Tree Bay Beach', link: 'https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html' },
-        { name: '🏊 Hotel Pool', link: '#' },
-        { name: '🎡 Luna Park (Evening)', link: 'https://waterworldwaterpark.com/' }
+        { name: '🏖️ Fig Tree Bay', link: 'https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html' },
+        { name: '🎡 Luna Park', link: 'https://waterworldwaterpark.com/' },
+        { name: '🌅 Sunset View', link: '#' }
       ]
     },
     {
       day: 3,
-      date: 'July 22',
       title: 'Water World Park Day 💦',
-      activity: 'A day full of fun and excitement! Head to Water World Park - the ultimate water park experience with thrilling slides, pools for all ages, and attractions for the whole family. Splash around, challenge each other on the water slides, and enjoy refreshing swims. Lunch and snacks available at the park.',
+      date: 'July 22, 2026',
+      morning: 'Fuel up with a big breakfast before the big day!',
+      noon: 'SPLASH TIME! Water World Park with slides, pools, and SO much fun!',
+      evening: 'Rest and relax after all the water park adventures',
       folder: 'Day 3',
       location: { name: 'Water World Park', link: 'https://maps.google.com/?q=Water+World+Park+Cyprus' },
-      booking: { name: 'Water World Info', link: 'https://waterworldwaterpark.com/' },
+      booking: { name: 'Park Info', link: 'https://waterworldwaterpark.com/' },
       links: [
-        { name: '💦 Water World Park', link: 'https://waterworldwaterpark.com/' },
-        { name: '🎢 Park Tickets', link: 'https://waterworldwaterpark.com/' },
-        { name: '🍽️ Park Restaurant', link: '#' }
+        { name: '💦 Water World', link: 'https://waterworldwaterpark.com/' },
+        { name: '🎢 Epic Slides', link: '#' },
+        { name: '🍔 Snack Time', link: '#' }
       ]
     },
     {
       day: 4,
-      date: 'July 23',
       title: 'Boat Cruise Adventure 🚤',
-      activity: 'Set sail on an unforgettable boat cruise! Join the famous Yellow Boat Cruises and explore the stunning Protaras coastline. Discover hidden caves, swim in crystal-clear turquoise waters, snorkel among colorful fish, and enjoy the beauty of the Mediterranean. Relax on deck, take in the views, and create amazing memories with the girls.',
+      date: 'July 23, 2026',
+      morning: 'Get ready for adventure! Prepare your snorkeling gear!',
+      noon: 'All aboard the Yellow Boat! Explore caves, spot fish, and swim in turquoise water!',
+      evening: 'Watch the sunset from the boat and enjoy dinner by the sea',
       folder: 'Day 4',
-      location: { name: 'Protaras Harbor', link: 'https://maps.google.com/?q=Protaras+boat+tours+Cyprus' },
-      booking: { name: 'Yellow Boat Cruises', link: 'https://www.getyourguide.com/protaras-l132513/protaras-the-family-fun-cruise-with-the-yellow-boat-cruises-t931227/' },
+      location: { name: 'Protaras Harbor', link: 'https://maps.google.com/?q=Protaras+boat+tours' },
+      booking: { name: 'Boat Tours', link: 'https://www.getyourguide.com/protaras-l132513/protaras-the-family-fun-cruise-with-the-yellow-boat-cruises-t931227/' },
       links: [
-        { name: '🚤 Yellow Boat Cruise', link: 'https://www.getyourguide.com/protaras-l132513/protaras-the-family-fun-cruise-with-the-yellow-boat-cruises-t931227/' },
-        { name: '🤿 Snorkel Gear', link: '#' },
-        { name: '🍽️ Lunch on Boat', link: '#' }
+        { name: '🚤 Yellow Boat', link: 'https://www.getyourguide.com/protaras-l132513/protaras-the-family-fun-cruise-with-the-yellow-boat-cruises-t931227/' },
+        { name: '🤿 Snorkeling', link: '#' },
+        { name: '🐠 Sea Life', link: '#' }
       ]
     },
     {
       day: 5,
-      date: 'July 24',
       title: 'Pool, Sea & Shopping 🛍️',
-      activity: 'Your final day of adventure! Start with a relaxing morning at the hotel pool, then enjoy one last swim in the beautiful sea. Afterwards, explore local shops and markets for souvenirs and last-minute shopping. Pick up gifts, local crafts, and memories to take home. End the day with a special goodbye dinner together, celebrating an amazing week with the girls!',
+      date: 'July 24, 2026',
+      morning: 'Relax by the hotel pool one last time',
+      noon: 'One more swim in the sea and beach time!',
+      evening: 'SHOPPING ADVENTURE! Find souvenirs and special gifts for everyone!',
       folder: 'Day 5',
       location: { name: 'Protaras Town', link: 'https://maps.google.com/?q=Protaras+Cyprus' },
-      booking: { name: 'Shopping Guide', link: 'https://maps.google.com/?q=shops+Protaras+Cyprus' },
+      booking: { name: 'Shops', link: 'https://maps.google.com/?q=shops+Protaras' },
       links: [
-        { name: '🏊 Hotel Pool (Final Swim)', link: '#' },
-        { name: '🏖️ Beach (Last Swim)', link: '#' },
-        { name: '🛍️ Local Shops & Souvenirs', link: 'https://maps.google.com/?q=shops+Protaras+Cyprus' }
+        { name: '🏖️ Final Beach Day', link: '#' },
+        { name: '🛍️ Shopping Spree', link: '#' },
+        { name: '🎁 Souvenirs', link: '#' }
       ]
     },
     {
       day: 6,
-      date: 'July 25',
       title: 'Going Home ✈️',
-      activity: 'Time to say goodbye to beautiful Cyprus! Enjoy a final breakfast, check out of Sunrise Pearl Hotel, and head to the airport. Reflect on the amazing memories, the laughter, the adventures, and the precious time spent together. Safe travels home with hearts full of wonderful moments!',
+      date: 'July 25, 2026',
+      morning: 'Last breakfast at the hotel. Say goodbye to Cyprus!',
+      noon: 'Check out and head to the airport',
+      evening: 'Fly home with amazing memories and tired but happy hearts! 💕',
       folder: 'Day 6',
-      location: { name: 'Airport', link: 'https://maps.google.com/?q=Larnaca+Airport+Cyprus' },
-      booking: { name: 'Flight Booking', link: '#' },
+      location: { name: 'Larnaca Airport', link: 'https://maps.google.com/?q=Larnaca+Airport+Cyprus' },
+      booking: { name: 'Flight Info', link: '#' },
       links: [
-        { name: '🏨 Hotel Checkout', link: '#' },
-        { name: '🚕 Airport Transfer', link: '#' },
-        { name: '✈️ Flight Details', link: '#' }
+        { name: '✈️ Flight Details', link: '#' },
+        { name: '🧳 Packing', link: '#' },
+        { name: '📸 Save Memories', link: '#' }
       ]
     }
   ]
 };
 
-// Initialize
+// Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('.tab-btn');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const day = parseInt(tab.dataset.day);
+  const stationBtns = document.querySelectorAll('.station-btn');
+  stationBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const day = parseInt(btn.dataset.day);
       updateDay(day);
 
-      // Update active tab
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
+      // Update active station
+      stationBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
     });
   });
 
-  // Load day 1
+  // Load day 1 by default
   updateDay(1);
 });
 
 function updateDay(dayNumber) {
   const day = tripData.days[dayNumber - 1];
 
-  // Update header
-  document.getElementById('day-date').textContent = day.date;
+  // Update title and date
   document.getElementById('day-title').textContent = day.title;
+  document.getElementById('day-date').textContent = day.date;
 
-  // Update activity
-  document.getElementById('day-activity').textContent = day.activity;
+  // Update timeline cards
+  document.getElementById('morning-text').textContent = day.morning;
+  document.getElementById('noon-text').textContent = day.noon;
+  document.getElementById('evening-text').textContent = day.evening;
 
-  // Update location
-  document.getElementById('location-link').textContent = day.location.name + ' →';
+  // Update location and booking
+  document.getElementById('location-link').textContent = day.location.name;
   document.getElementById('location-link').href = day.location.link;
-
-  // Update booking
-  document.getElementById('booking-link').textContent = day.booking.name + ' →';
+  document.getElementById('booking-link').textContent = day.booking.name;
   document.getElementById('booking-link').href = day.booking.link;
 
-  // Update gallery
-  loadGallery(day.folder);
-
-  // Update important links
+  // Update quick links
   const linksContainer = document.getElementById('important-links');
   linksContainer.innerHTML = '';
   day.links.forEach(link => {
@@ -138,51 +147,40 @@ function updateDay(dayNumber) {
     linksContainer.appendChild(a);
   });
 
+  // Load gallery
+  loadGallery(day.folder);
+
   // Update progress
   const progress = (dayNumber / 6) * 100;
   document.getElementById('progress-fill').style.width = progress + '%';
   document.getElementById('progress-text').textContent = dayNumber;
 
-  // Scroll to top
+  // Smooth scroll to top
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function loadGallery(folder) {
   const gallery = document.getElementById('gallery');
-  const noImages = document.getElementById('no-images');
   gallery.innerHTML = '';
 
   let imageCount = 0;
 
-  // Try to load images 1-10 from the folder
+  // Try to load images from the folder
   for (let i = 1; i <= 10; i++) {
     const imgPath = `images/${folder}/${i}.jpg`;
     const img = new Image();
 
     img.onload = function() {
       imageCount++;
-      noImages.style.display = 'none';
-
       const item = document.createElement('div');
       item.className = 'gallery-item';
       const imgEl = document.createElement('img');
       imgEl.src = imgPath;
-      imgEl.alt = `Day ${folder} - Photo ${i}`;
+      imgEl.alt = `Photo ${i}`;
       item.appendChild(imgEl);
       gallery.appendChild(item);
     };
 
-    img.onerror = function() {
-      // Image not found
-    };
-
     img.src = imgPath;
   }
-
-  // Show "no images" if none found
-  setTimeout(() => {
-    if (imageCount === 0) {
-      noImages.style.display = 'block';
-    }
-  }, 1000);
 }
