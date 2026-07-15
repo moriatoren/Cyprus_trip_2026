@@ -3,139 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🏝️ הרפתקת קפריסין - יומן מסע אינטראקטיבי</title>
+    <title>🏝️ הרפתקת קפריסין</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="container">
-            <h1>🏝️ הרפתקת קפריסין</h1>
-            <p class="subtitle">יומן המסע האינטראקטיבי שלנו</p>
-        </div>
+        <h1>🏝️ הרפתקת קפריסין</h1>
+        <p>יומן המסע שלנו - 20-25 ביולי 2026</p>
     </header>
 
-    <!-- DAY SELECTOR - STATIONS ON MAP -->
-    <nav class="day-selector">
-        <div class="container">
-            <div class="stations-track">
-                <button class="station-btn active" data-day="1">
-                    <div class="station-icon">✈️</div>
-                    <div class="station-label">יום 1</div>
-                </button>
-                <div class="station-connector"></div>
-                <button class="station-btn" data-day="2">
-                    <div class="station-icon">🏊</div>
-                    <div class="station-label">יום 2</div>
-                </button>
-                <div class="station-connector"></div>
-                <button class="station-btn" data-day="3">
-                    <div class="station-icon">💦</div>
-                    <div class="station-label">יום 3</div>
-                </button>
-                <div class="station-connector"></div>
-                <button class="station-btn" data-day="4">
-                    <div class="station-icon">🚤</div>
-                    <div class="station-label">יום 4</div>
-                </button>
-                <div class="station-connector"></div>
-                <button class="station-btn" data-day="5">
-                    <div class="station-icon">🛍️</div>
-                    <div class="station-label">יום 5</div>
-                </button>
-                <div class="station-connector"></div>
-                <button class="station-btn" data-day="6">
-                    <div class="station-icon">✈️</div>
-                    <div class="station-label">יום 6</div>
-                </button>
-            </div>
-        </div>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <button class="nav-btn active" onclick="showDay(1)">יום 1 ✈️</button>
+        <button class="nav-btn" onclick="showDay(2)">יום 2 🏊</button>
+        <button class="nav-btn" onclick="showDay(3)">יום 3 💦</button>
+        <button class="nav-btn" onclick="showDay(4)">יום 4 🚤</button>
+        <button class="nav-btn" onclick="showDay(5)">יום 5 🛍️</button>
+        <button class="nav-btn" onclick="showDay(6)">יום 6 ✈️</button>
     </nav>
 
     <!-- MAIN CONTENT -->
     <main class="container">
-        <!-- DAY TITLE -->
-        <section class="day-header">
-            <h2 id="day-title">יום 1: הגעה והתמקמות 🏨</h2>
-            <p id="day-date" class="day-date">20 ביולי 2026</p>
-        </section>
+        <!-- DAY 1 -->
+        <div class="day-section" id="day-1">
+            <h2>יום 1: הגעה והתמקמות 🏨</h2>
+            <p class="date">20 ביולי 2026</p>
 
-        <!-- TIMELINE -->
-        <section class="timeline-section">
             <div class="timeline">
-                <!-- Morning Card -->
-                <div class="timeline-card morning-card">
-                    <div class="card-icon">🌅</div>
-                    <div class="card-content">
-                        <h3>בוקר</h3>
-                        <p id="morning-text">נסיעה לקפריסין והגעה לשדה התעופה</p>
-                    </div>
-                    <div class="card-time">בוקר מוקדם</div>
+                <div class="timeline-item">
+                    <h3>🌅 בוקר</h3>
+                    <p>נסיעה לקפריסין והגעה לשדה התעופה! כל כך מרגש!</p>
                 </div>
-
-                <!-- Noon Card -->
-                <div class="timeline-card noon-card">
-                    <div class="card-icon">☀️</div>
-                    <div class="card-content">
-                        <h3>צהריים</h3>
-                        <p id="noon-text">הסתגרות במלון Sunrise Pearl</p>
-                    </div>
-                    <div class="card-time">בצהריים</div>
+                <div class="timeline-item">
+                    <h3>☀️ צהריים</h3>
+                    <p>הסתגרות במלון Sunrise Pearl וניפוח בחדרים שלנו</p>
                 </div>
-
-                <!-- Evening Card -->
-                <div class="timeline-card evening-card">
-                    <div class="card-icon">🌙</div>
-                    <div class="card-content">
-                        <h3>ערב</h3>
-                        <p id="evening-text">טיול בעיר וארוחת ערב</p>
-                    </div>
-                    <div class="card-time">בערב</div>
+                <div class="timeline-item">
+                    <h3>🌙 ערב</h3>
+                    <p>טיול בעיר, חקר חנויות וארוחת ערב מיוחדת</p>
                 </div>
             </div>
-        </section>
 
-        <!-- GALLERY -->
-        <section class="gallery-section">
-            <h3>📸 התמונות שלנו</h3>
-            <div id="gallery" class="gallery-grid">
-                <!-- Images load here -->
-            </div>
-        </section>
+            <div class="gallery" id="gallery-1"></div>
 
-        <!-- INFO FOR MOMS -->
-        <section class="mom-info">
-            <h3>👩 מידע להורים</h3>
-            <div class="info-grid">
+            <div class="info-section">
                 <div class="info-card">
                     <h4>📍 מיקום</h4>
-                    <a id="location-link" href="#" target="_blank">צפה במפה</a>
+                    <a href="https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus" target="_blank">מלון Sunrise Pearl</a>
                 </div>
                 <div class="info-card">
-                    <h4>🎫 הזמנה</h4>
-                    <a id="booking-link" href="#" target="_blank">הזמן עכשיו</a>
+                    <h4>🔗 קישורים</h4>
+                    <a href="https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus" target="_blank">🏨 המלון</a>
+                    <a href="https://maps.google.com/?q=restaurants+Protaras" target="_blank">🍽️ ארוחה</a>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- QUICK LINKS -->
-        <section class="quick-links">
-            <h3>🔗 קישורים שימושיים</h3>
-            <div id="important-links" class="links-grid">
-                <!-- Links load here -->
+        <!-- DAY 2 -->
+        <div class="day-section" id="day-2" style="display:none;">
+            <h2>יום 2: בריכה וים 🏊‍♀️</h2>
+            <p class="date">21 ביולי 2026</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🌅 בוקר</h3>
+                    <p>התעוררות וקפיצה לבריכת המלון!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>☀️ צהריים</h3>
+                    <p>נסיעה לחוף Fig Tree Bay - אחד החופים היפים ביותר בקפריסין!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🌙 ערב</h3>
+                    <p>הרפתקה בלונה פארק - רכיבות, משחקים וכיף תחת הכוכבים! 🎡</p>
+                </div>
             </div>
-        </section>
+
+            <div class="gallery" id="gallery-2"></div>
+
+            <div class="info-section">
+                <div class="info-card">
+                    <h4>📍 מיקום</h4>
+                    <a href="https://maps.google.com/?q=Fig+Tree+Bay+Protaras" target="_blank">חוף Fig Tree Bay</a>
+                </div>
+                <div class="info-card">
+                    <h4>🔗 קישורים</h4>
+                    <a href="https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html" target="_blank">🏖️ החוף</a>
+                    <a href="https://waterworldwaterpark.com/" target="_blank">🎡 לונה פארק</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="day-section" id="day-3" style="display:none;">
+            <h2>יום 3: יום פארק המים 💦</h2>
+            <p class="date">22 ביולי 2026</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🌅 בוקר</h3>
+                    <p>ארוחת בוקר גדולה לפני הגלישה הגדולה!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>☀️ צהריים</h3>
+                    <p>זמן ללא רחמים! פארק המים עם גלישים מדהימים, בריכות וכל כך הרבה כיף!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🌙 ערב</h3>
+                    <p>נרגע אחרי כל ההרפתקות של פארק המים</p>
+                </div>
+            </div>
+
+            <div class="gallery" id="gallery-3"></div>
+
+            <div class="info-section">
+                <div class="info-card">
+                    <h4>📍 מיקום</h4>
+                    <a href="https://maps.google.com/?q=Water+World+Park+Cyprus" target="_blank">פארק המים</a>
+                </div>
+                <div class="info-card">
+                    <h4>🔗 קישורים</h4>
+                    <a href="https://waterworldwaterpark.com/" target="_blank">💦 פארק המים</a>
+                    <a href="#" target="_blank">🎢 גלישים מדהימים</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="day-section" id="day-4" style="display:none;">
+            <h2>יום 4: הרפתקת סירה 🚤</h2>
+            <p class="date">23 ביולי 2026</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🌅 בוקר</h3>
+                    <p>התכוננו להרפתקה! הכינו את ציוד הנורקלינג שלכן!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>☀️ צהריים</h3>
+                    <p>כל מי שעולה על הסירה הצהובה! גילוי מערות, צפייה בדגים ושחיה בים טורקיז!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🌙 ערב</h3>
+                    <p>צפו בשקיעה מהסירה והנהנו מארוחת ערב ליד הים</p>
+                </div>
+            </div>
+
+            <div class="gallery" id="gallery-4"></div>
+
+            <div class="info-section">
+                <div class="info-card">
+                    <h4>📍 מיקום</h4>
+                    <a href="https://maps.google.com/?q=Protaras+boat+tours" target="_blank">נמל Protaras</a>
+                </div>
+                <div class="info-card">
+                    <h4>🔗 קישורים</h4>
+                    <a href="https://www.getyourguide.com/protaras-l132513/protaras-the-family-fun-cruise-with-the-yellow-boat-cruises-t931227/" target="_blank">🚤 סירה צהובה</a>
+                    <a href="#" target="_blank">🤿 נורקלינג</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 5 -->
+        <div class="day-section" id="day-5" style="display:none;">
+            <h2>יום 5: בריכה, ים וקניות 🛍️</h2>
+            <p class="date">24 ביולי 2026</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🌅 בוקר</h3>
+                    <p>תנוח ליד בריכת המלון בפעם אחרונה</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>☀️ צהריים</h3>
+                    <p>שחיה אחת אחרונה בים וזמן חוף!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🌙 ערב</h3>
+                    <p>הרפתקת קניות! חפשו מזכרות ומתנות מיוחדות לכולם!</p>
+                </div>
+            </div>
+
+            <div class="gallery" id="gallery-5"></div>
+
+            <div class="info-section">
+                <div class="info-card">
+                    <h4>📍 מיקום</h4>
+                    <a href="https://maps.google.com/?q=Protaras+Cyprus" target="_blank">עיר Protaras</a>
+                </div>
+                <div class="info-card">
+                    <h4>🔗 קישורים</h4>
+                    <a href="https://maps.google.com/?q=shops+Protaras" target="_blank">🏖️ יום חוף אחרון</a>
+                    <a href="#" target="_blank">🎁 מזכרות</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 6 -->
+        <div class="day-section" id="day-6" style="display:none;">
+            <h2>יום 6: חזרה הביתה ✈️</h2>
+            <p class="date">25 ביולי 2026</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>🌅 בוקר</h3>
+                    <p>ארוחת בוקר אחרונה במלון. הפרדה מקפריסין!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>☀️ צהריים</h3>
+                    <p>צאו מהמלון וכיוונו לשדה התעופה</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>🌙 ערב</h3>
+                    <p>טיסה הביתה עם זיכרונות מדהימים וליבות מלאות אהבה! 💕</p>
+                </div>
+            </div>
+
+            <div class="gallery" id="gallery-6"></div>
+
+            <div class="info-section">
+                <div class="info-card">
+                    <h4>📍 מיקום</h4>
+                    <a href="https://maps.google.com/?q=Larnaca+Airport+Cyprus" target="_blank">שדה תעופה לרנקה</a>
+                </div>
+                <div class="info-card">
+                    <h4>🔗 קישורים</h4>
+                    <a href="#" target="_blank">✈️ פרטי הטיסה</a>
+                    <a href="#" target="_blank">📸 שמרו זיכרונות</a>
+                </div>
+            </div>
+        </div>
 
         <!-- PROGRESS -->
-        <section class="progress-section">
+        <div class="progress-section">
             <h3>🎯 התקדמות הטיול</h3>
-            <div class="progress-container">
-                <div class="progress-bar">
-                    <div id="progress-fill" class="progress-fill"></div>
-                </div>
-                <p><span id="progress-text">1</span> / 6 ימים</p>
+            <div class="progress-bar">
+                <div id="progress" class="progress-fill"></div>
             </div>
-        </section>
+            <p id="progress-text">יום 1 מתוך 6</p>
+        </div>
     </main>
 
     <!-- FOOTER -->
