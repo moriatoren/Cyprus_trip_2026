@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-day1: #FFB6D9;
+  --color-day2: #87CEEB;
+  --color-day3: #FFD700;
+  --color-day4: #98FB98;
+  --color-day5: #FFA07A;
+  --color-day6: #DDA0DD;
+}
+
+body {
+  background: linear-gradient(135deg, #fff5f9 0%, #f0f9ff 50%, #fffacd 100%);
+  color: #1A1A1A;
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Remove default button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #FF69B4;
+  outline-offset: 2px;
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(135deg, #fff5f9 0%, #ffe4f0 100%);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.1);
+}
+
+header h1 {
+  background: linear-gradient(135deg, #FF1493, #FF69B4, #FFB6D9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Tabs Styling */
+.day-tab {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 12px 12px 0 0;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.day-tab:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 105, 180, 0.1);
+}
+
+.day-tab.active {
+  transform: scale(1.05) translateY(-2px);
+  font-weight: 700;
+  box-shadow: 0 -4px 12px rgba(255, 105, 180, 0.2);
+}
+
+/* Day-specific Tab Colors */
+[data-day="1"].day-tab.active { background: linear-gradient(135deg, #FFB6D9, #FFE4F0); border-color: #FF69B4; }
+[data-day="2"].day-tab.active { background: linear-gradient(135deg, #87CEEB, #B0E0E6); border-color: #4169E1; }
+[data-day="3"].day-tab.active { background: linear-gradient(135deg, #FFD700, #FFEB3B); border-color: #FFA500; }
+[data-day="4"].day-tab.active { background: linear-gradient(135deg, #98FB98, #90EE90); border-color: #228B22; }
+[data-day="5"].day-tab.active { background: linear-gradient(135deg, #FFA07A, #FF8C69); border-color: #FF6347; }
+[data-day="6"].day-tab.active { background: linear-gradient(135deg, #DDA0DD, #EE82EE); border-color: #9932CC; }
+
+/* Image Placeholder Styles */
+#day-image {
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(255, 105, 180, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#day-image:hover {
+  transform: scale(1.02);
+}
+
+#day-image-placeholder {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #FFE4F0, #F0F9FF, #FFFACD);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Day Title */
+h2 {
+  background: linear-gradient(135deg, #FF1493, #FFB6D9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.5rem;
+}
+
+/* Activity Box */
+.bg-blue-50 {
+  background: linear-gradient(135deg, rgba(255, 182, 217, 0.2), rgba(135, 206, 235, 0.2)) !important;
+  border-left: 4px solid #FF69B4 !important;
+  border-radius: 8px;
+}
+
+/* Links Box */
+.bg-white {
+  background: linear-gradient(135deg, #FFF5F9, #F0F9FF) !important;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.bg-white:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(255, 105, 180, 0.15);
+  background: linear-gradient(135deg, #FFE4F0, #E0F6FF) !important;
+}
+
+/* Important Links Grid */
+#important-links a {
+  background: linear-gradient(135deg, #FFF5F9, #F0F9FF);
+  border: 2px solid #FFD4E5;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#important-links a:hover {
+  transform: translateY(-6px);
+  border-color: #FF69B4;
+  box-shadow: 0 12px 24px rgba(255, 105, 180, 0.2);
+  background: linear-gradient(135deg, #FFE4F0, #FFD4E5);
+}
+
+/* Progress Bar */
+#progress-bar {
+  background: linear-gradient(90deg, #FF1493, #FF69B4, #FFB6D9);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #FF1493, #FF69B4);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #FFF5F9, #F0F9FF);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FFB6D9, #FF69B4);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FF69B4, #FF1493);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .day-tab {
+    font-size: 0.875rem;
+    padding: 0.75rem 0.5rem !important;
+  }
+}
