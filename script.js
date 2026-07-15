@@ -2,98 +2,98 @@ const tripData = {
   days: [
     {
       day: 1,
-      title: 'Arrival & Check-in 🏨',
-      date: 'July 20, 2026',
-      morning: 'Travel to Cyprus and arrive at the airport! So exciting!',
-      noon: 'Check in to Sunrise Pearl Hotel and settle into your rooms',
-      evening: 'Walk around town, explore shops, and enjoy a welcome dinner',
+      title: 'יום 1: הגעה והתמקמות 🏨',
+      date: '20 ביולי 2026',
+      morning: 'נסיעה לקפריסין והגעה לשדה התעופה! כל כך מרגש!',
+      noon: 'הסתגרות במלון Sunrise Pearl וניפוח בחדרים שלנו',
+      evening: 'טיול בעיר, חקר חנויות ותיהנו מארוחת ערב מיוחדת',
       folder: 'day 1',
-      location: { name: 'Sunrise Pearl Hotel', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
-      booking: { name: 'Hotel Info', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
+      location: { name: 'מלון Sunrise Pearl', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
+      booking: { name: 'מידע על המלון', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
       links: [
-        { name: '🏨 Hotel', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
-        { name: '🍽️ Dinner', link: 'https://maps.google.com/?q=restaurants+Protaras' },
-        { name: '🛍️ Shopping', link: 'https://maps.google.com/?q=Protaras+shops' }
+        { name: '🏨 המלון', link: 'https://maps.google.com/?q=Sunrise+Pearl+Protaras+Cyprus' },
+        { name: '🍽️ ארוחה', link: 'https://maps.google.com/?q=restaurants+Protaras' },
+        { name: '🛍️ קניות', link: 'https://maps.google.com/?q=Protaras+shops' }
       ]
     },
     {
       day: 2,
-      title: 'Pool & Sea Day 🏊‍♀️',
-      date: 'July 21, 2026',
-      morning: 'Wake up and jump into the hotel pool!',
-      noon: 'Head to Fig Tree Bay - one of the most beautiful beaches in Cyprus!',
-      evening: 'Luna Park adventure - rides, games, and fun under the stars! 🎡',
+      title: 'יום 2: בריכה וים 🏊‍♀️',
+      date: '21 ביולי 2026',
+      morning: 'התעוררות קפיצה לבריכת המלון!',
+      noon: 'הנסיעה לחוף Fig Tree Bay - אחד החופים היפים ביותר בקפריסין!',
+      evening: 'הרפתקה בלונה פארק - רכיבות, משחקים וכיף תחת הכוכבים! 🎡',
       folder: 'Day 2',
-      location: { name: 'Fig Tree Bay Beach', link: 'https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html' },
-      booking: { name: 'Beach Info', link: 'https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html' },
+      location: { name: 'חוף Fig Tree Bay', link: 'https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html' },
+      booking: { name: 'מידע על החוף', link: 'https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html' },
       links: [
         { name: '🏖️ Fig Tree Bay', link: 'https://www.tripadvisor.com/Attraction_Review-g667803-d1755105-Reviews-Fig_Tree_Bay_Beach-Protaras_Paralimni_Famagusta_District.html' },
-        { name: '🎡 Luna Park', link: 'https://waterworldwaterpark.com/' },
-        { name: '🌅 Sunset View', link: '#' }
+        { name: '🎡 לונה פארק', link: 'https://waterworldwaterpark.com/' },
+        { name: '🌅 נוף השקיעה', link: '#' }
       ]
     },
     {
       day: 3,
-      title: 'Water World Park Day 💦',
-      date: 'July 22, 2026',
-      morning: 'Fuel up with a big breakfast before the big day!',
-      noon: 'SPLASH TIME! Water World Park with slides, pools, and SO much fun!',
-      evening: 'Rest and relax after all the water park adventures',
+      title: 'יום 3: יום פארק המים 💦',
+      date: '22 ביולי 2026',
+      morning: 'ארוחת בוקר גדולה לפני הקווקים הגדול!',
+      noon: 'זמן ללא רחמים! פארק המים עם גלישים, בריכות וכל כך הרבה כיף!',
+      evening: 'נרגע אחרי כל ההרפתקות של פארק המים',
       folder: 'Day 3',
-      location: { name: 'Water World Park', link: 'https://maps.google.com/?q=Water+World+Park+Cyprus' },
-      booking: { name: 'Park Info', link: 'https://waterworldwaterpark.com/' },
+      location: { name: 'פארק המים', link: 'https://maps.google.com/?q=Water+World+Park+Cyprus' },
+      booking: { name: 'מידע על הפארק', link: 'https://waterworldwaterpark.com/' },
       links: [
-        { name: '💦 Water World', link: 'https://waterworldwaterpark.com/' },
-        { name: '🎢 Epic Slides', link: '#' },
-        { name: '🍔 Snack Time', link: '#' }
+        { name: '💦 פארק המים', link: 'https://waterworldwaterpark.com/' },
+        { name: '🎢 גלישים אפיים', link: '#' },
+        { name: '🍔 זמן לחטיפים', link: '#' }
       ]
     },
     {
       day: 4,
-      title: 'Boat Cruise Adventure 🚤',
-      date: 'July 23, 2026',
-      morning: 'Get ready for adventure! Prepare your snorkeling gear!',
-      noon: 'All aboard the Yellow Boat! Explore caves, spot fish, and swim in turquoise water!',
-      evening: 'Watch the sunset from the boat and enjoy dinner by the sea',
+      title: 'יום 4: הרפתקת סירה 🚤',
+      date: '23 ביולי 2026',
+      morning: 'התכוננו להרפתקה! הכינו את הציוד שנורקלינג שלכן!',
+      noon: 'כל מי שעולה על הסירה הצהובה! חקור מערות, ספוט דגים ותחום בים טורקיז!',
+      evening: 'צפו בשקיעה מהסירה והנהנו מארוחת ערב ליד הים',
       folder: 'Day 4',
-      location: { name: 'Protaras Harbor', link: 'https://maps.google.com/?q=Protaras+boat+tours' },
-      booking: { name: 'Boat Tours', link: 'https://www.getyourguide.com/protaras-l132513/protaras-the-family-fun-cruise-with-the-yellow-boat-cruises-t931227/' },
+      location: { name: 'נמל Protaras', link: 'https://maps.google.com/?q=Protaras+boat+tours' },
+      booking: { name: 'סיורי סירה', link: 'https://www.getyourguide.com/protaras-l132513/protaras-the-family-fun-cruise-with-the-yellow-boat-cruises-t931227/' },
       links: [
-        { name: '🚤 Yellow Boat', link: 'https://www.getyourguide.com/protaras-l132513/protaras-the-family-fun-cruise-with-the-yellow-boat-cruises-t931227/' },
-        { name: '🤿 Snorkeling', link: '#' },
-        { name: '🐠 Sea Life', link: '#' }
+        { name: '🚤 סירה צהובה', link: 'https://www.getyourguide.com/protaras-l132513/protaras-the-family-fun-cruise-with-the-yellow-boat-cruises-t931227/' },
+        { name: '🤿 נורקלינג', link: '#' },
+        { name: '🐠 חיות ים', link: '#' }
       ]
     },
     {
       day: 5,
-      title: 'Pool, Sea & Shopping 🛍️',
-      date: 'July 24, 2026',
-      morning: 'Relax by the hotel pool one last time',
-      noon: 'One more swim in the sea and beach time!',
-      evening: 'SHOPPING ADVENTURE! Find souvenirs and special gifts for everyone!',
+      title: 'יום 5: בריכה, ים וקניות 🛍️',
+      date: '24 ביולי 2026',
+      morning: 'תנוח ליד בריכת המלון בפעם אחרונה',
+      noon: 'שחיה אחת אחרונה בים וזמן חוף!',
+      evening: 'הרפתקת קניות! חפשו מזכרות ומתנות מיוחדות לכולם!',
       folder: 'Day 5',
-      location: { name: 'Protaras Town', link: 'https://maps.google.com/?q=Protaras+Cyprus' },
-      booking: { name: 'Shops', link: 'https://maps.google.com/?q=shops+Protaras' },
+      location: { name: 'עיר Protaras', link: 'https://maps.google.com/?q=Protaras+Cyprus' },
+      booking: { name: 'חנויות', link: 'https://maps.google.com/?q=shops+Protaras' },
       links: [
-        { name: '🏖️ Final Beach Day', link: '#' },
-        { name: '🛍️ Shopping Spree', link: '#' },
-        { name: '🎁 Souvenirs', link: '#' }
+        { name: '🏖️ יום חוף אחרון', link: '#' },
+        { name: '🛍️ קניות מטורפות', link: '#' },
+        { name: '🎁 מזכרות', link: '#' }
       ]
     },
     {
       day: 6,
-      title: 'Going Home ✈️',
-      date: 'July 25, 2026',
-      morning: 'Last breakfast at the hotel. Say goodbye to Cyprus!',
-      noon: 'Check out and head to the airport',
-      evening: 'Fly home with amazing memories and tired but happy hearts! 💕',
+      title: 'יום 6: חזרה הביתה ✈️',
+      date: '25 ביולי 2026',
+      morning: 'ארוחת בוקר אחרונה במלון. הפרדה מקפריסין!',
+      noon: 'צאו מהמלון וכיוונו לשדה התעופה',
+      evening: 'טיסה הביתה עם זיכרונות מדהימים וליבות מלאות אהבה! 💕',
       folder: 'Day 6',
-      location: { name: 'Larnaca Airport', link: 'https://maps.google.com/?q=Larnaca+Airport+Cyprus' },
-      booking: { name: 'Flight Info', link: '#' },
+      location: { name: 'שדה תעופה לרנקה', link: 'https://maps.google.com/?q=Larnaca+Airport+Cyprus' },
+      booking: { name: 'פרטי הטיסה', link: '#' },
       links: [
-        { name: '✈️ Flight Details', link: '#' },
-        { name: '🧳 Packing', link: '#' },
-        { name: '📸 Save Memories', link: '#' }
+        { name: '✈️ פרטי הטיסה', link: '#' },
+        { name: '🧳 סידור קופסאות', link: '#' },
+        { name: '📸 שמרו זיכרונות', link: '#' }
       ]
     }
   ]
@@ -176,7 +176,7 @@ function loadGallery(folder) {
       item.className = 'gallery-item';
       const imgEl = document.createElement('img');
       imgEl.src = imgPath;
-      imgEl.alt = `Photo ${i}`;
+      imgEl.alt = `תמונה ${i}`;
       item.appendChild(imgEl);
       gallery.appendChild(item);
     };
