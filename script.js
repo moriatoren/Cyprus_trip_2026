@@ -44,20 +44,28 @@ function loadGallery(dayNumber) {
     folderName = 'Day ' + dayNumber;
   }
 
-  // Try to load images
+  // Try to load images with different extensions
+  const extensions = ['jpg', 'avif', 'png'];
+
   for (let i = 1; i <= 10; i++) {
-    const imgPath = `images/${folderName}/${i}.jpg`;
-    const img = document.createElement('img');
-    img.src = imgPath;
-    img.alt = 'תמונה ' + i;
+    let loaded = false;
 
-    img.onload = function() {
-      gallery.appendChild(img);
-    };
+    for (let ext of extensions) {
+      if (loaded) break;
 
-    img.onerror = function() {
-      // Image not found, skip
-    };
+      const imgPath = `images/${folderName}/${i}.${ext}`;
+      const testImg = new Image();
+
+      testImg.onload = function() {
+        const img = document.createElement('img');
+        img.src = imgPath;
+        img.alt = 'תמונה ' + i;
+        gallery.appendChild(img);
+        loaded = true;
+      };
+
+      testImg.src = imgPath;
+    }
   }
 }
 
