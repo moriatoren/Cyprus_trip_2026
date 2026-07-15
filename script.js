@@ -36,15 +36,15 @@ const tripData = {
       day: 3,
       title: 'יום 3: יום פארק המים 💦',
       date: '22 ביולי 2026',
-      morning: 'ארוחת בוקר גדולה לפני הקווקים הגדול!',
-      noon: 'זמן ללא רחמים! פארק המים עם גלישים, בריכות וכל כך הרבה כיף!',
+      morning: 'ארוחת בוקר גדולה לפני הגלישה הגדולה!',
+      noon: 'זמן ללא רחמים! פארק המים עם גלישים מדהימים, בריכות וכל כך הרבה כיף!',
       evening: 'נרגע אחרי כל ההרפתקות של פארק המים',
       folder: 'Day 3',
       location: { name: 'פארק המים', link: 'https://maps.google.com/?q=Water+World+Park+Cyprus' },
       booking: { name: 'מידע על הפארק', link: 'https://waterworldwaterpark.com/' },
       links: [
         { name: '💦 פארק המים', link: 'https://waterworldwaterpark.com/' },
-        { name: '🎢 גלישים אפיים', link: '#' },
+        { name: '🎢 גלישים מדהימים', link: '#' },
         { name: '🍔 זמן לחטיפים', link: '#' }
       ]
     },
@@ -53,7 +53,9 @@ const tripData = {
       title: 'יום 4: הרפתקת סירה 🚤',
       date: '23 ביולי 2026',
       morning: 'התכוננו להרפתקה! הכינו את הציוד שנורקלינג שלכן!',
-      noon: 'כל מי שעולה על הסירה הצהובה! חקור מערות, ספוט דגים ותחום בים טורקיז!',
+      noon: 'כל מי שעולה על הסירה הצהובה! גילוי מערות, צפייה בדגים וש
+
+חיה בים טורקיז!',
       evening: 'צפו בשקיעה מהסירה והנהנו מארוחת ערב ליד הים',
       folder: 'Day 4',
       location: { name: 'נמל Protaras', link: 'https://maps.google.com/?q=Protaras+boat+tours' },
